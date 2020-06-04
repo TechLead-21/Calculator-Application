@@ -94,7 +94,7 @@ val result = when (operator) {
 
 > If input doesn't return _Double_ or _Null_ then it runs else part will get execute by throwing an IllegalArgumentException
 
-6. **readline()**
+7. **readline()**
 
 ```kotlin
     var input: String? = readLine()

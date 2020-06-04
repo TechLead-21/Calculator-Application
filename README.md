@@ -72,7 +72,20 @@ val result = when (operator) {
 
 > ```when``` operator is same as ```switch case``` in C/C++.
 
-5. **else-if operator**
+5. **Arrow (->) Operator**
+
+```kotlin
+        "+" -> lhs + rhs
+        "-" -> lhs - rhs
+        "*" -> lhs * rhs
+        "/" -> lhs / rhs
+        "%" -> lhs % rhs
+```
+
+> It will separate the condition and body of a ```when``` expression branch.
+> If matches with inputed operator from user then it will perform that operation allocated to that operator like ```"+" -> lhs + rhs```
+
+6. **else-if operator**
 
 ```kotlin
     val lhs = values[0].toDoubleOrNull() ?: throw IllegalArgumentException("Invalid input: ${values[0]}")

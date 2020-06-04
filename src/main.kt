@@ -24,6 +24,7 @@ fun main(vararg arg: String){
                 "-" -> lhs - rhs
                 "*" -> lhs * rhs
                 "/" -> lhs / rhs
+                "%" -> lhs % rhs
 
                 else -> throw IllegalArgumentException("Invalid operator: $operator")
             }

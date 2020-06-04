@@ -1,25 +1,34 @@
 fun main(vararg arg: String){
     println("Please enter your arithmetic problem...")
+
+    /* Reading user input */
     var input: String? = readLine()
 
     while ( input!=null && input.isNotBlank() ){
 
         val values:List<String> = input.split( ' ')
 
-        val operator: String = values[1]
-        val lhs = values[0]
-        val rhs = values[2]
+        // Validations
+        if (values.size < 3){
+            println("Invalid input. Expected: value + value. Received: $input")
+        }else {
 
-        when (operator){
-            "+" -> println(lhs.toDouble() + rhs.toDouble())
-            "-" -> println(lhs.toDouble() - rhs.toDouble())
-            "*" -> println(lhs.toDouble() * rhs.toDouble())
-            "/" -> println(lhs.toDouble() / rhs.toDouble())
+            /* Inputs from user */
+            val operator: String = values[1]
+            val lhs = values[0].toDoubleOrNull() ?: throw IllegalArgumentException("Invalid input: ${values[0]}")
+            val rhs = values[2].toDoubleOrNull() ?: throw IllegalArgumentException("Invalid input: ${values[1]}")
 
-            else -> throw IllegalArgumentException("Invalid operator: $operator")
+            /* Checking operator and performing arithmetic operation */
+            when (operator) {
+                "+" -> println(lhs + rhs)
+                "-" -> println(lhs - rhs)
+                "*" -> println(lhs * rhs)
+                "/" -> println(lhs / rhs)
 
+                else -> throw IllegalArgumentException("Invalid operator: $operator")
+
+            }
         }
-
         input = readLine()
     }
 

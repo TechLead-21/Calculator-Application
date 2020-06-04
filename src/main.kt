@@ -19,18 +19,18 @@ fun main(vararg arg: String){
             val rhs = values[2].toDoubleOrNull() ?: throw IllegalArgumentException("Invalid input: ${values[1]}")
 
             /* Checking operator and performing arithmetic operation */
-            when (operator) {
-                "+" -> println(lhs + rhs)
-                "-" -> println(lhs - rhs)
-                "*" -> println(lhs * rhs)
-                "/" -> println(lhs / rhs)
+            val result = when (operator) {
+                "+" -> lhs + rhs
+                "-" -> lhs - rhs
+                "*" -> lhs * rhs
+                "/" -> lhs / rhs
 
                 else -> throw IllegalArgumentException("Invalid operator: $operator")
-
             }
+            println(result)
         }
         input = readLine()
     }
 
-    println("Good bye!")
+    println("Good bye! 👋🏼")
 }

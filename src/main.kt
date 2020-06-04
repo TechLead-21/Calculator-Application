@@ -31,6 +31,5 @@ fun main(vararg arg: String){
         }
         input = readLine()
     }
-
     println("Good bye! 👋🏼")
 }

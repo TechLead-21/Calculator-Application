@@ -8,7 +8,7 @@
 
 ## **My Application.**
 
-> A very simple _calculator_ application coded in _kotlin_ programming language which takes inputs from user along with some ```arithmetic operator``` such as and perform further calculations.
+> A very simple _calculator_ application coded in _kotlin_ programming language which takes inputs from user along with some ```arithmetic operator``` and perform further calculations.
 
 > I have also implemented some _**input validations**_ :
 

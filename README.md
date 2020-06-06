@@ -6,6 +6,14 @@
 <h1><b>Calculator Application</b></h1>
 </div>
 
+<div align="center">
+
+![version](https://img.shields.io/badge/jdk-14.0.1-orange)
+![open source](https://img.shields.io/badge/open-source-blue)
+![kotlin build](https://img.shields.io/badge/kotlin-build-purple)
+
+</div>
+
 ## **My Application.**
 
 > A very simple _calculator_ application coded in _kotlin_ programming language which takes inputs from user along with some ```arithmetic operator``` and perform further calculations.

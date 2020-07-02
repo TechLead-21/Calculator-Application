@@ -134,6 +134,14 @@ val result = when (operator) {
 
 ---
 
+## **Certificate** 🏆
+
+![30 Days of Kotlin](https://res.cloudinary.com/techlead/image/upload/v1593701246/Certificates/e0vppwj2dijguddjty0s.jpg "Certificate of Participation")
+
+> `Download from ` [`here`](assets/certificate.pdf)
+
+---
+
 <div align="center">
 <h5><b>Thanks for reading out 😊</b></h5>
 </div>

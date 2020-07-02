@@ -138,7 +138,7 @@ val result = when (operator) {
 
 ![30 Days of Kotlin](https://res.cloudinary.com/techlead/image/upload/v1593701246/Certificates/e0vppwj2dijguddjty0s.jpg "Certificate of Participation")
 
-> `Download from ` [`here`](assets/certificate.pdf)
+> **Download from** [**here.**](https://github.com/TechLead-21/Calculator-Application/raw/master/assets/certificate.pdf)
 
 ---
 

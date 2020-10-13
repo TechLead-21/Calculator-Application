@@ -15,17 +15,17 @@ fun main(vararg arg: String){
 
             /* Inputs from user */
             val operator: String = values[1]
-            val lhs = values[0].toDoubleOrNull() ?: throw IllegalArgumentException("Invalid input: ${values[0]}")
-            val rhs = values[2].toDoubleOrNull() ?: throw IllegalArgumentException("Invalid input: ${values[1]}")
+            val left_operand = values[0].toDoubleOrNull() ?: throw IllegalArgumentException("Invalid input: ${values[0]}")
+            val right_operand = values[2].toDoubleOrNull() ?: throw IllegalArgumentException("Invalid input: ${values[1]}")
 
             /* Checking operator and performing arithmetic operation */
             val result = when (operator) {
-                "+" -> lhs + rhs
-                "-" -> lhs - rhs
-                "*" -> lhs * rhs
-                "/" -> lhs / rhs
-                "%" -> lhs % rhs
-                "^" -> lhs.pow(rhs)
+                "+" -> left_operand + right_operand
+                "-" -> left_operand - right_operand
+                "*" -> left_operand * right_operand
+                "/" -> left_operand / right_operand
+                "%" -> left_operand % right_operand
+                "^" -> left_operand.pow(right_operand)
 
                 else -> throw IllegalArgumentException("Invalid operator: $operator")
             }

@@ -25,6 +25,7 @@ fun main(vararg arg: String){
                 "*" -> lhs * rhs
                 "/" -> lhs / rhs
                 "%" -> lhs % rhs
+                "^" -> lhs.pow(rhs)
 
                 else -> throw IllegalArgumentException("Invalid operator: $operator")
             }
